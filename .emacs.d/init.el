@@ -19,6 +19,8 @@
 (column-number-mode t)   ;Display colum
 (global-hl-line-mode t)  ;Display line highlight
 
+;; turn off auto bakcup
+(setq make-backup-files nil)
 
 ;;scroll settings
 (setq mouse-wheel-scroll-amount '(2 ((shift) . 1))   ;scroll 2 lines
