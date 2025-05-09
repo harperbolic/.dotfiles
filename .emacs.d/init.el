@@ -1,6 +1,5 @@
 ;;Load paths
 (add-to-list 'load-path "~/.emacs.d/require/")
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes/")
 
 (setq inhibit-startup-message t)
 
@@ -31,20 +30,9 @@
 ;;sound settings
 (setq visible-bell t)    ;Visible bell to disable annoying beeps
 
+;; add melpa
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+
 ;;Load theme
-(load-theme 'zenburn t)
-(custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(custom-safe-themes
-   '("f87c86fa3d38be32dc557ba3d4cedaaea7bc3d97ce816c0e518dfe9633250e34"
-     "e3999eba4f25d912d7d61cbaaed1b551957e61da047279da89499d3bd1f1d007"
-     default)))
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+(load-theme 'kuronami t)
